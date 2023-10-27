@@ -42,7 +42,7 @@ const Navbar = () => {
                         <Link href="#blogSection" onClick={handleScroll}>Blog</Link>
                         <Link href="#footer" onClick={handleScroll}>Contact</Link>
                     </div>
-                    <button type='button' onClick={toggleCollapse} className=' flex items-center justify-center text-2xl relative'>
+                    <button type='button' onClick={toggleCollapse} className='lg:hidden flex items-center justify-center text-2xl relative'>
                         <FontAwesomeIcon icon={faBars} className={isCollapse ? 'scale-100 rotate-0 transition-all duration-500' : 'scale-0 rotate-180 transition-all duration-300'} />
                         <FontAwesomeIcon icon={faClose} className={isCollapse ? 'absolute scale-0 -rotate-180 transition-all duration-300' : 'absolute scale-100 text-red-500 rotate-0 transition-all duration-500'} />
                     </button>

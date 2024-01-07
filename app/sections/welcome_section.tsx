@@ -1,10 +1,14 @@
 'use client'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFacebook, faInstagram, faTwitter, faGithub, faWhatsapp } from "@fortawesome/free-brands-svg-icons"
+import {
+    faFacebook,
+    faInstagram,
+    faGithub,
+    faWhatsapp,
+    faXTwitter
+} from "@fortawesome/free-brands-svg-icons"
 import Profile2 from '../images/profile_2.png'
 import Image from "next/image"
-import Link from "next/link"
-import { url } from "inspector"
 
 const WelcomeSection = () => {
 
@@ -33,13 +37,13 @@ const WelcomeSection = () => {
 
                     <FontAwesomeIcon onClick={() => handleRedirect('https://www.instagram.com/andri.story_10/')} icon={faInstagram} className="text-2xl md:text-4xl lg:text-2xl transition-all duration-300 hover:scale-125 cursor-pointer" />
 
-                    <FontAwesomeIcon icon={faTwitter} className=" transition-all duration-300 hover:scale-125 cursor-pointer" />
+                    <FontAwesomeIcon icon={faXTwitter} className=" transition-all duration-300 hover:scale-125 cursor-pointer" />
 
                     <FontAwesomeIcon onClick={() => handleRedirect('https://github.com/Andri10dev')} icon={faGithub} className=" transition-all duration-300 hover:scale-125 cursor-pointer" />
                 </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-end order-1 lg:order-2 mb-10 md:mb-0">
-                <Image src={Profile2} alt="Andri Ardiansyah" className="w-[300px] md:w-[1200px] lg:w-[500px] aspect-square object-contain mx-auto md:mx-0"></Image>
+                <Image src={Profile2} alt="Andri Ardiansyah" className="w-[300px] sm:[w-300] md:w-[1200px] lg:w-[500px] aspect-square smobject-contain mx-auto md:mx-0"></Image>
             </div>
         </div>
     )

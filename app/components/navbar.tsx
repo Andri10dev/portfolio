@@ -31,9 +31,9 @@ const Navbar = () => {
             <nav className="w-full text-white fixed z-50">
                 <div className="bg-black/50 backdrop-blur-sm w-full h-16 flex items-center justify-between px-5 lg:px-10">
                     <div className="font-semibold">
-                        Andri Ardiansyah
+                        <Link href="#welcomeSection" onClick={handleScroll}>Andri Ardiansyah</Link>
                     </div>
-                    <div className="hidden lg:flex space-x-3 items-center font-semibold">
+                    <div className="hidden md:flex space-x-3 items-center font-semibold">
                         <Link href="#welcomeSection" onClick={handleScroll}>Home</Link>
                         <Link href="#aboutSection" onClick={handleScroll}>About</Link>
                         <Link href="#serviceSection" onClick={handleScroll}>Service</Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
                         <Link href="#blogSection" onClick={handleScroll}>Blog</Link>
                         <Link href="#footer" onClick={handleScroll}>Contact</Link>
                     </div>
-                    <button type='button' onClick={toggleCollapse} className='lg:hidden flex items-center justify-center text-2xl relative'>
+                    <button type='button' onClick={toggleCollapse} className='md:hidden flex items-center justify-center text-2xl relative'>
                         <FontAwesomeIcon icon={faBars} className={isCollapse ? 'scale-100 rotate-0 transition-all duration-500' : 'scale-0 rotate-180 transition-all duration-300'} />
                         <FontAwesomeIcon icon={faClose} className={isCollapse ? 'absolute scale-0 -rotate-180 transition-all duration-300' : 'absolute scale-100 text-red-500 rotate-0 transition-all duration-500'} />
                     </button>
